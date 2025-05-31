@@ -82,3 +82,6 @@ commit_helper() {
         echo "❌ 커밋이 취소되었습니다."
     fi
 }
+
+# 함수 실행
+commit_helper
