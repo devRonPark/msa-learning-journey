@@ -24,8 +24,17 @@ NC='\033[0m' # No Color
 # 날짜 계산 함수
 calculate_day_number() {
     local current_date=$(date +%Y-%m-%d)
-    local start_timestamp=$(date -d "$START_DATE" +%s)
-    local current_timestamp=$(date -d "$current_date" +%s)
+    # 날짜를 타임스탬프로 변환 (macOS/Linux 호환)
+    if date -d "$START_DATE" +%s > /dev/null 2>&1; then
+        # GNU date 사용 가능 (Linux)
+        start_timestamp=$(date -d "$START_DATE" +%s)
+        current_timestamp=$(date -d "$current_date" +%s)
+    else
+        # BSD date 사용 (macOS)
+        start_timestamp=$(date -jf "%Y-%m-%d" "$START_DATE" +%s)
+        current_timestamp=$(date +%s)
+    fi
+
     local diff_days=$(( (current_timestamp - start_timestamp) / 86400 + 1 ))
     echo $diff_days
 }
