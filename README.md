@@ -13,6 +13,7 @@
 이 레포지토리는 백엔드 개발자로서 MSA 실무 경험을 체계적으로 쌓기 위한 60일간의 학습 여정을 기록합니다. 이론 학습부터 실제 마이크로서비스 구현, 운영까지 전 과정을 다룹니다.
 
 ### 🎯 학습 목표
+
 - [ ] MSA 아키텍처 패턴 이해 및 적용
 - [ ] Spring Cloud 생태계 활용 경험
 - [ ] 서비스 간 통신 (동기/비동기) 구현
@@ -23,23 +24,23 @@
 
 ### 📦 마이크로서비스 구성
 
-| 서비스명 | 역할 | 기술 스택 | 포트 | 상태 |
-|---------|------|----------|------|------|
-| **User Service** | 사용자 관리, 인증/인가 | Spring Boot, JWT, MySQL | 8081 | ⏳ 예정 |
-| **Product Service** | 상품 관리, 카탈로그 | Spring Boot, Redis, MySQL | 8082 | ⏳ 예정 |
-| **Order Service** | 주문 처리, 주문 이력 | Spring Boot, MySQL | 8083 | ⏳ 예정 |
-| **Payment Service** | 결제 처리 | Spring Boot, MySQL | 8084 | ⏳ 예정 |
-| **Notification Service** | 알림 발송 | Spring Boot, RabbitMQ | 8085 | ⏳ 예정 |
+| 서비스명                 | 역할                   | 기술 스택                 | 포트 | 상태    |
+| ------------------------ | ---------------------- | ------------------------- | ---- | ------- |
+| **User Service**         | 사용자 관리, 인증/인가 | Spring Boot, JWT, MySQL   | 8081 | ⏳ 예정 |
+| **Product Service**      | 상품 관리, 카탈로그    | Spring Boot, Redis, MySQL | 8082 | ⏳ 예정 |
+| **Order Service**        | 주문 처리, 주문 이력   | Spring Boot, MySQL        | 8083 | ⏳ 예정 |
+| **Payment Service**      | 결제 처리              | Spring Boot, MySQL        | 8084 | ⏳ 예정 |
+| **Notification Service** | 알림 발송              | Spring Boot, RabbitMQ     | 8085 | ⏳ 예정 |
 
 ### 🔧 인프라 구성
 
-| 컴포넌트 | 역할 | 기술 | 포트 | 상태 |
-|---------|------|------|------|------|
-| **API Gateway** | 라우팅, 인증, 로드밸런싱 | Spring Cloud Gateway | 8080 | ⏳ 예정 |
-| **Service Discovery** | 서비스 등록/발견 | Eureka Server | 8761 | ⏳ 예정 |
-| **Message Queue** | 비동기 메시징 | RabbitMQ | 5672 | ⏳ 예정 |
-| **Monitoring** | 메트릭 수집/시각화 | Prometheus, Grafana | 3000, 9090 | ⏳ 예정 |
-| **Logging** | 로그 수집/분석 | ELK Stack | 9200, 5601 | ⏳ 예정 |
+| 컴포넌트              | 역할                     | 기술                 | 포트       | 상태    |
+| --------------------- | ------------------------ | -------------------- | ---------- | ------- |
+| **API Gateway**       | 라우팅, 인증, 로드밸런싱 | Spring Cloud Gateway | 8080       | ⏳ 예정 |
+| **Service Discovery** | 서비스 등록/발견         | Eureka Server        | 8761       | ⏳ 예정 |
+| **Message Queue**     | 비동기 메시징            | RabbitMQ             | 5672       | ⏳ 예정 |
+| **Monitoring**        | 메트릭 수집/시각화       | Prometheus, Grafana  | 3000, 9090 | ⏳ 예정 |
+| **Logging**           | 로그 수집/분석           | ELK Stack            | 9200, 5601 | ⏳ 예정 |
 
 ## 📅 학습 계획 및 진행률
 
@@ -49,14 +50,15 @@
 <summary><strong>1주차: MSA 기초 이론 (Day 1-7)</strong></summary>
 
 - [x] **Day 1**: Monolithic vs MSA 아키텍처 차이점 이해 ✅
-- [ ] **Day 2**: MSA 장단점 및 도입 시점 분석
-- [ ] **Day 3**: Domain Driven Design(DDD) 기초
+- [x] **Day 2**: MSA 장단점 및 도입 시점 분석
+- [x] **Day 3**: Domain Driven Design(DDD) 기초
 - [ ] **Day 4**: 서비스 분해 전략 학습
 - [ ] **Day 5**: MSA 필수 기술 스택 조사
 - [ ] **Day 6**: Spring Cloud 생태계 이해
 - [ ] **Day 7**: 1주차 학습 내용 정리
 
-**진행률**: 1/7 (14.3%) 🔄
+**진행률**: 3/7 (42.8%) 🔄
+
 </details>
 
 <details>
@@ -71,6 +73,7 @@
 - [ ] **Day 14**: 2주차 정리 및 다음 주 계획
 
 **진행률**: 0/7 (0%) ⏳
+
 </details>
 
 <details>
@@ -85,6 +88,7 @@
 - [ ] **Day 21**: User Service Docker화
 
 **진행률**: 0/7 (0%) ⏳
+
 </details>
 
 <details>
@@ -99,6 +103,7 @@
 - [ ] **Day 28**: Product Service Docker화
 
 **진행률**: 0/7 (0%) ⏳
+
 </details>
 
 <details>
@@ -113,6 +118,7 @@
 - [ ] **Day 35**: Order Service Docker화
 
 **진행률**: 0/7 (0%) ⏳
+
 </details>
 
 <details>
@@ -127,6 +133,7 @@
 - [ ] **Day 42**: Gateway Docker화
 
 **진행률**: 0/7 (0%) ⏳
+
 </details>
 
 <details>
@@ -141,6 +148,7 @@
 - [ ] **Day 49**: 메시징 시스템 테스트
 
 **진행률**: 0/7 (0%) ⏳
+
 </details>
 
 <details>
@@ -155,6 +163,7 @@
 - [ ] **Day 56**: 서킷브레이커 패턴 적용
 
 **진행률**: 0/7 (0%) ⏳
+
 </details>
 
 <details>
@@ -166,14 +175,17 @@
 - [ ] **Day 60**: 최종 테스트 및 배포 가이드 작성
 
 **진행률**: 0/4 (0%) ⏳
+
 </details>
 
 ### 📊 전체 진행률
+
 **1 / 60일 완료** (1.7%)
 
 ## 🚀 빠른 시작
 
 ### 📋 사전 요구사항
+
 - Java 17+
 - Docker & Docker Compose
 - IntelliJ IDEA (권장)
@@ -195,12 +207,12 @@ curl http://localhost:8080/actuator/health
 
 ### 🌐 주요 엔드포인트
 
-| 서비스 | URL | 설명 |
-|--------|-----|------|
-| API Gateway | http://localhost:8080 | 메인 진입점 |
-| Eureka Dashboard | http://localhost:8761 | 서비스 디스커버리 |
-| RabbitMQ Management | http://localhost:15672 | 메시지 큐 관리 |
-| Grafana Dashboard | http://localhost:3000 | 모니터링 대시보드 |
+| 서비스              | URL                    | 설명              |
+| ------------------- | ---------------------- | ----------------- |
+| API Gateway         | http://localhost:8080  | 메인 진입점       |
+| Eureka Dashboard    | http://localhost:8761  | 서비스 디스커버리 |
+| RabbitMQ Management | http://localhost:15672 | 메시지 큐 관리    |
+| Grafana Dashboard   | http://localhost:3000  | 모니터링 대시보드 |
 
 ## 📁 프로젝트 구조
 
@@ -231,29 +243,35 @@ msa-learning-journey/
 ## 🛠️ 기술 스택
 
 ### Backend
+
 ![Java](https://img.shields.io/badge/Java-17-orange?style=flat-square&logo=java)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.1-green?style=flat-square&logo=spring)
 ![Spring Cloud](https://img.shields.io/badge/Spring%20Cloud-2022.0-green?style=flat-square&logo=spring)
 
 ### Database
+
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?style=flat-square&logo=mysql)
 ![Redis](https://img.shields.io/badge/Redis-7.0-red?style=flat-square&logo=redis)
 
 ### Message Queue
+
 ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-3.11-orange?style=flat-square&logo=rabbitmq)
 
 ### DevOps
+
 ![Docker](https://img.shields.io/badge/Docker-Latest-blue?style=flat-square&logo=docker)
 ![Prometheus](https://img.shields.io/badge/Prometheus-Latest-red?style=flat-square&logo=prometheus)
 ![Grafana](https://img.shields.io/badge/Grafana-Latest-orange?style=flat-square&logo=grafana)
 
 ### Testing
+
 ![JUnit](https://img.shields.io/badge/JUnit-5-green?style=flat-square&logo=junit5)
 ![Testcontainers](https://img.shields.io/badge/Testcontainers-1.18-blue?style=flat-square)
 
 ## 📚 학습 자료
 
 ### 📖 추천 도서
+
 - 📕 **마이크로서비스 패턴** - 크리스 리처드슨
 - 📗 **도메인 주도 설계** - 에릭 에반스
 - 📘 **Spring in Action** - 크레이그 월즈
@@ -261,6 +279,7 @@ msa-learning-journey/
 ### 🎥 온라인 강의
 
 ### 🔗 유용한 링크
+
 - [Spring Cloud 공식 문서](https://spring.io/projects/spring-cloud)
 - [마이크로서비스 아키텍처 패턴](https://microservices.io/)
 - [12 Factor App](https://12factor.net/)
@@ -268,6 +287,7 @@ msa-learning-journey/
 ## 📝 블로그 포스팅 시리즈
 
 ### 📄 작성 예정 글
+
 - [ ] MSA 도입기: 프로젝트 설계부터 구현까지
 - [ ] Spring Cloud Gateway로 API Gateway 구축하기
 - [ ] RabbitMQ를 활용한 비동기 메시징 패턴
